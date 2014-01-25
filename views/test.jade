@@ -1,0 +1,30 @@
+extends layout
+append content
+      script(src='/socket.io/socket.io.js')
+      div(data-role='content')
+        p Show only: 
+          a(href='/game/market/?met=network') Network utils        
+          a(href='/game/market?met=offense') Offensive tools 
+          a(href='/game/market?met=defence') Defensive tools 
+        div.ui-grid-c
+         each tool in docs
+          
+              
+            div.ui-block-a
+             
+             p #{tool.tool_name}
+     
+            div.ui-block-b
+             p #{tool.tool_version} 
+            
+      
+            div.ui-block-c
+             p #{tool.description}
+       
+         
+         each m in buy 
+           a(href='/game/market/buy/'+m.id) BUY
+           <br /><br /><br />
+            
+   
+  

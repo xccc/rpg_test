@@ -1,0 +1,7 @@
+extends layout
+append content
+  System Information
+  each i in stats
+    p CPU #{i.current_cpu}
+    p HDD #{i.current_hdd}
+    p Memory #{i.current_memory}

@@ -1,0 +1,32 @@
+extends layout
+append content
+ 
+  a(href='/mail') Tagakaisi
+  
+     
+     
+  if id
+   p title: #{mail[0].title}
+   p Message: #{mail[0].message}
+  else
+    div.ui-grid-a
+     div.ui-block-a
+      p Title:
+     div.ui-block-b
+      p Sender: 
+    each m in mail
+    
+     div.ui-grid-a
+      div.ui-block-a
+       a(href='/mail/'+m.id) #{m.title}
+
+      div.ui-block-b
+        a(href='/profile/'+m.id) #{m.from}
+   
+ 
+          
+        
+      
+      
+    
+    

@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href="/stylesheets/bootstrap.min.css")
+    script(src='http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js')
+    script(src='http://code.jquery.com/jquery-1.8.3.min.js')
+    script(src='/javascripts/bootstrap.js')
+    | <script> function init()  { $('.collapse').collapse() } $(document).ready(init) </script>
+ 
+  
+  body
+    div(class="container")
+      h1
+        a(href='#') jou check-it!
+    li#dropdown
+      a(href='#' class='dropdown-toggle' data-toggle='dropdown')

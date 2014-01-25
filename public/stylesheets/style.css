@@ -1,0 +1,53 @@
+html, body {
+
+	height: 100%;
+}
+#map-page .ui-content {
+	height: 100%;
+}
+#kato .ui-content {
+
+	position: absolute;
+	top: 40px;
+	right: 0;
+	bottom: 30px;
+	left: 0;
+}
+	
+#divino {
+//	overflow-y: scroll;
+//	height: 400px !important;
+}
+#dimitri {
+	hidden: true;
+
+	min-height: 10%;
+	min-width: 100%;
+	left: 0 !important;
+	position: absolute;
+	top: 80%;
+}
+#dimitri2 {
+
+
+	position: absolute !important;
+	top: 85% !important;
+	border: 1px solid white;
+	width: 100% !important;
+	left: 0 !important;
+}
+	.ui-page {
+		width: 100% !important;		
+}
+
+
+
+#dimitri3 {
+//	left: 30 !important;
+	border: 1px solid black;
+//	min-height: 400px !important;
+}
+
+
+#dimitri4 {
+	left: 50 !important;

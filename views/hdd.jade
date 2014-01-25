@@ -1,0 +1,22 @@
+extends layout
+append content
+  script(src='/javascripts/tryme.js')  
+  
+  each item in inventory
+    div.ui-grid-c
+       input(type='hidden' id='player' value=player)
+     div.ui-block-a
+       a(href='/game/hdd/'+item.software) #{item.software}
+       <br />
+    
+       
+     div.ui-block-b
+       
+       if item.installed == 0
+         | <input id='item_install' type='button' name=#{item.software} value='INSTALL#{item.software}' />
+         | <input id='item_delete' type='button' name=#{item.software} value='DELETE' />
+         
+         
+       else
+          | <input id='item_uninstall' type='button' name=#{item.software} value='UNINSTALL#{item.software}' />
+          | <input id='item_delete' type='button' name=#{item.software} value='DELETE' />

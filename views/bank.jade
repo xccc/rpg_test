@@ -1,0 +1,11 @@
+extends layout
+append content
+  p eta bank
+  if action == 1
+    
+    input(type='button' name='register' value='Register')
+  else if action == 2
+    a(href='/game/bank-login') Login
+  else
+    
+    p Money in da bank #{bank_info[0].balance}

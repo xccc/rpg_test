@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    link(rel='stylesheet' href='//code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css')
+    script(src='//code.jquery.com/jquery-1.8.3.min.js')
+    script(src='//code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js')
+    script(src="//code.jquery.com/ui/1.10.3/jquery-ui.js")
+    
+  
+  body
+    div(data-role='page')
+    
+      div(data-role='header')
+        p
+          a(href="javascript:window.location.assign('http://localhost:8080/logout')") Logout
+          
+          a(href='/game/browser') Browser
+          
+          a(href='/game/bank') Bank
+          
+          a(href='/game/email') Email
+          
+          a(href='/game/market') Market
+          
+          a(href='/game/hdd') HDD
+          
+          a(href='/game/chat') Chat
+          
+          a(href='/game/programming') Programming
+          
+          a(href='/game/System') System info
+          
+          a(href='/game/hardware') Hardware Shop
+          
+          a(href='/game/HOF') Hall of Fame
+          
+          a(href='/game/Missions') Missions
+          
+          a(href='/game/Hacking') Hack
+          
+      div(data-role='content')
+        block content
+        
+      div(data-role='footer' data-position='fixed')
+        p eta footer

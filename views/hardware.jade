@@ -1,0 +1,11 @@
+extends layout
+append content
+  each i in hardwar
+    a(href='/game/hardware/buy/'+i.id) #{i.name}
+    <br />
+  if e_rror
+    p #{e_rror}
+  if stored
+    each k in stored
+      p #{k.hardware}
+    <br />

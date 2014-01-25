@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    script(src='http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js')
+    script(src='http://code.jquery.com/jquery-1.8.3.min.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='/javascripts/register.js')
+  body
+    div(data-role='header')
+    
+    div(data-role='content')
+  
+  
+     div(data-role='fieldcontain' id='best')
+      Im teh shit
+      
+      form(method='POST')
+      
+        | Username: <input type='text' name='username' id='username' ><p class='username' style='display: inline;'></p> <br />
+        |Password: <input type='text' name='password' id='password' ><p class='password' style='display: inline;'></p> <br />
+        |Repeat password: <input type='text' name='password2' id='password2'><p class='password2' style='display: inline;'></p> <br />
+        |Email: <input type='text' name='email' id='email' ><p class='email' style='display: inline;'></p> <br />
+        |Email repeat: <input type='text' name='email2' id='email2'><p class='email2' style='display: inline;'></p> <br />
+        |I agree <input type='checkbox' id='agree') <br />
+        |<input type='submit' name='submit' value='Register'  id='register' disabled='true'>
+
