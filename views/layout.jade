@@ -6,6 +6,7 @@ html
     link(rel='stylesheet', href='/stylesheets/jquery.mobile.icons.min.css')
     link(rel='stylesheet', href='http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css')
     script(src='http://code.jquery.com/jquery-1.10.2.min.js')
+    script(src='http://code.jquery.com/ui/1.10.4/jquery-ui.js')
     script(src='http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js')
     script(src='/menu.js')
     script(src='/socket.io/socket.io.js')
@@ -24,7 +25,7 @@ html
 
         block content
         
-      div#footer(data-role='footer' data-theme='a' style='position: fixed; left: 0;bottom: 0')
+      div#footer(data-role='footer' data-theme='a' style='position: fixed; left: 0;bottom: 0;border: none !important;')
         div(data-type='horizontal', data-role='controlgroup' style='margin-left: auto; margin-right: auto; text-align: center')
 
           a(data-theme='none', data-shadow='false' href='/')

@@ -1,37 +1,38 @@
 extends layout
 block content
-  script(src='/node-connection.js')
-  div#nav(data-role='navbar')
-     ul
-       li
-         a.ui-btn-active(href='#'  data-role="button" data-mini='true' data-corners='false' id="listb2" ) Show/Hide
-
-  
+  script(src='/node-connection.js') 
   div#browser(data-role='content' data-theme='a' data-inset='true' style='position: relative; top:0; left: 0; color: #2b9904;text-align: center; backround-color: black; max-width: 90%; height:90%')
-  
-          input(type='text' data-corners='false' value='127.0.0.1' id='address' style='width:80%; position:relative; top:0; margin-left: auto; margin-right: auto;')
-          p Welcome to the network
-          p#host(style='position: relative; text-align: center')
+    div(data-role='controlgroup' style='position:fixed; left: 0; width:30px; height:25%; top: 155px')
+        input(type='image', src='/images/upload.png' id="droppable1" style='position: relative; float: top; padding: 5px; border: 1px solid #2b9904;')
+        input(type='image', src='/images/download.png' id="droppable2" style='position: relative; float: top; padding: 5px;border: 1px solid #2b9904')
+        input(type='image', src='/images/execute.png' id="droppable3" style='position: relative; float: top; padding: 5px;border: 1px solid #2b9904')
+        input(type='image', src='/images/delete.png' id="droppable4" style='position: relative; float: top; padding: 5px;border: 1px solid #2b9904')
+ 
+    input(type='text' data-corners='false' value='127.0.0.1' id='address' style='width:100%; position:relative; float:top;')
+    input(type='image', src='/images/nav-btn.png' id="listb2" style='position: relative; float: right')
+    h3 Welcome to the network
+    p#host(style='position: relative; text-align: center')
+    div#droppable.ui-widget-header(style='width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px;')
+    p Drop here
+
+          
+
   if info
     p Click
       a(href='/IP/JOIN' ) here
       you like sucking dicks.
   if list
-  //button#listb(data-inline='true' data-mini='true' data-corners='false' style='position: fixed; top: 45px') List
-  //input(type='image', src='/images/nav-btn.png', alt='submit' value='Login' id="listb" style='position: fixed; left: 0.5%;top: 0.5%')
-  div#iplist(data-role='content' data-theme='a' style='position: absolute; top:0; left: 0; color: #2b9904;text-align: center; backround-color: black; width: 95%; height:90%;')
-    div#nav(data-role='navbar')
-     ul
-       li
-         a.ui-btn-active(href='#'  data-role="button" data-mini='true' data-corners='false' id="listb") Show/Hide
-    ol.span#ip_list(data-role='listview' data-inset='true' data-corners='false')
-      li(data-role='list-divider' data-corners='false' style='max-width: 100% !important;') IP Database
+  div#iplist(data-role='content' data-theme='a' data-transition='slide' style='position: absolute; top:0; left: 0; color: #2b9904;text-align: center; backround-color: black; width: 95%; height:90%;')
+    ul.span#ip_list(data-role='listview' data-inset='true' data-corners='false')
+      li(data-role='list-divider' data-corners='false' style='max-width: 80% !important;') IP Database
       for x in list
      
-       li(style='font-size: 12px; max-width: 90% !important;' data-corners='false' data-icon='none') 
-        a(href="#" onclick="con('" + x.ip_addr + " ');") <span style='font-size: 80%;'>  #{x.ip_addr} <span style='color: red; font-size: 80%;'> #{x.desc} </span>
+       li(style='max-width: 80% !important; border: 1px solid #2b9904' data-corners='false' data-icon='none' alt='listb') 
+        a(href="#" id='listb' onclick="con('" + x.ip_addr + "');") <span style='font-size: 70%;'> #{x.ip_addr} </span> <span style='color: red; font-size: 60%;'> #{x.desc} </span>
           p.ui-li-aside
            | <span style='font-size: 75%;' class='#{x.game_value}'></span>
+
+
   
   
   

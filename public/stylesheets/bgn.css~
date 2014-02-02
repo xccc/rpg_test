@@ -14,7 +14,7 @@
 /* Font
 -----------------------------------------------------------------------------------------------------------*/
 html {
-	font-size: 100%;
+	font-size: 80%;
 }
 body,
 input,
@@ -36,7 +36,7 @@ legend,
 .ui-mobile label,
 div.ui-controlgroup-label {
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 /** @group header **/
@@ -268,9 +268,9 @@ html .ui-bar-a .ui-bar-inherit,
 html .ui-body-a .ui-bar-inherit,
 html body .ui-group-theme-a .ui-bar-inherit {
 	background: #000000 /*{a-bar-background-color}*/;
-	border-color: #253801 /*{a-bar-border}*/;
+	border-color: #2b9904 /*{a-bar-border}*/;
 	color: #2b9904 /*{a-bar-color}*/;
-	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #253801 /*{a-bar-shadow-color}*/;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #000000 /*{a-bar-shadow-color}*/;
 	font-weight: bold;
 }
 .ui-bar-a {
@@ -284,7 +284,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 	background: #000000 /*{a-page-background-color}*/;
 	border-color: #253801 /*{a-page-border}*/;
 	color: #2b9904 /*{a-page-color}*/;
-	text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #253801 /*{a-page-shadow-color}*/;
+	text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #000000 /*{a-page-shadow-color}*/;
 }
 /* Body: Read-only lists, text inputs, collapsible content */
 .ui-body-a,
@@ -294,9 +294,9 @@ html .ui-body-a .ui-body-inherit,
 html body .ui-group-theme-a .ui-body-inherit,
 html .ui-panel-page-container-a {
 	background: #000000 /*{a-body-background-color}*/;
-	border-color: #253801 /*{a-body-border}*/;
+	border-color: #2b9904 /*{a-body-border}*/;
 	color: #2b9904 /*{a-body-color}*/;
-	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #253801 /*{a-body-shadow-color}*/;
+	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #000000 /*{a-body-shadow-color}*/;
 }
 .ui-body-a {
 	border-width: 1px;
@@ -365,7 +365,7 @@ html head + body .ui-btn.ui-btn-a:active {
 	background: #000000 /*{a-bdown-background-color}*/;
 	border-color: #253801 /*{a-bdown-border}*/;
 	color: #2b9904 /*{a-bdown-color}*/;
-	text-shadow: 0 /*{a-bdown-shadow-x}*/ 1px /*{a-bdown-shadow-y}*/ 0 /*{a-bdown-shadow-radius}*/ #253801 /*{a-bdown-shadow-color}*/;
+	text-shadow: 0 /*{a-bdown-shadow-x}*/ 1px /*{a-bdown-shadow-y}*/ 0 /*{a-bdown-shadow-radius}*/ #000000 /*{a-bdown-shadow-color}*/;
 }
 /* Active button */
 .ui-page-theme-a .ui-btn.ui-btn-active,
@@ -394,7 +394,7 @@ html body div.ui-slider-track.ui-body-a .ui-btn-active {
 	background-color: #2b9904 /*{a-active-background-color}*/;
 	border-color: #2b9904 /*{a-active-border}*/;
 	color: #000000 /*{a-active-color}*/;
-	text-shadow: 0 /*{a-active-shadow-x}*/ 1px /*{a-active-shadow-y}*/ 0 /*{a-active-shadow-radius}*/ #2b9904 /*{a-active-shadow-color}*/;
+	text-shadow: 0 /*{a-active-shadow-x}*/ 1px /*{a-active-shadow-y}*/ 0 /*{a-active-shadow-radius}*/ #000000 /*{a-active-shadow-color}*/;
 }
 /* Active radio button icon */
 .ui-page-theme-a .ui-radio-on:after,
