@@ -1,32 +1,34 @@
 doctype html
 html
   head
-    meta(name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1, maximum-scale=1, user-scalable=0")
+    meta(name="viewport" content="width=device-width, user-scalable=no, minimum-scale=0.5, maximum-scale=.5")
     link(rel='stylesheet', href='/stylesheets/bgn.css')
     link(rel='stylesheet', href='/stylesheets/jquery.mobile.icons.min.css')
+    link(rel='stylesheet', href='/stylesheets/slicknav.css')
     link(rel='stylesheet', href='http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css')
     script(src='http://code.jquery.com/jquery-1.10.2.min.js')
     script(src='http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js')
+    script(src='/jquery.slicknav.min.js')
+    script(src='/menu.js')
     script(src='/socket.io/socket.io.js')
     script(src='/scanner.js')
   
   body
-    div(data-role='page' data-theme='a' style='border: none !important')
+    div(data-role='page' data-theme='a' style='border: none !important;')
     
       div#header(data-role='header' data-theme='a')
-          input(href='/game/chat' type='image' src='/images/chat.png' style='position: fixed; right: 0.5%;top: 0.5%')
+ 
+ 
           
-
-          
-      div#content(data-role='content' data-theme='a' style='position: fixed; left:0 ;top: 45px ; bottom: 45px;color: #2b9904;text-align: left; backround-color: black; min-width: 100%')
+      div#content(data-role='content' data-theme='a' style='position: fixed; left:0 ;top: 45px ; bottom: 45px;color: #2b9904;text-align: center; backround-color: black; min-width: 100%; ')
 
         block content
         
       div#footer(data-role='footer' data-theme='a' style='position: fixed; left: 0;bottom: 0')
         div(data-type='horizontal', data-role='controlgroup' style='margin-left: auto; margin-right: auto; text-align: center')
 
-          a(data-theme='none', data-shadow='false' href='/game')
-            img(src='/images/network.png' style='padding:7px')
+          a(data-theme='none', data-shadow='false' href='/')
+            img(src='/images/home.png' style='padding:7px')
 
           a(data-theme='none', data-shadow='false' href='/game/bank')
             img(src='/images/bank.png' style='padding:7px')
@@ -34,14 +36,11 @@ html
           a(data-theme='none', data-shadow='false' href='/')
             img(src='/images/mail.png' style='padding:7px')
 
-          a(data-theme='none', data-shadow='false' href='/game/market')
+          a#listb(data-theme='none', data-shadow='false' href='/game/market')
             img(src='/images/file.png' style='padding:7px')
 
-          a(data-theme='none', data-shadow='false' href='/game/hdd')
-            img(src='/images/home.png' style='padding:7px')
-          a(href='/IP') IP db
-          //a(href="javascript:window.location.assign('http://localhost:8080/logout')") Logout
-          //a(href='/game/chat', data-rel='dialog') Chat
+          a(data-theme='none', data-shadow='false' href='/ip')
+            img(src='/images/world.png' style='padding:7px')
 
 
 
