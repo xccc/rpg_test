@@ -1,7 +1,12 @@
 extends layout
 append content
-  p Click here to began your epic journey through time!
-    a(href='/missions') timeless
-     
-  button#hide Hide
-  button#show Show
+     div#nav(data-role='navbar')
+        ul
+          li
+            a.ui-btn-active(href='#') Stats
+          li
+            a(href='#') System
+          li
+            a(href='#') HDD
+ 
+

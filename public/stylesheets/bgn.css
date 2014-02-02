@@ -14,7 +14,7 @@
 /* Font
 -----------------------------------------------------------------------------------------------------------*/
 html {
-	font-size: 100%;
+	font-size: 80%;
 }
 body,
 input,
@@ -36,7 +36,7 @@ legend,
 .ui-mobile label,
 div.ui-controlgroup-label {
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 /** @group header **/
